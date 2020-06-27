@@ -180,7 +180,7 @@ test_dataset = test_dataset.batch(batch_size)
 def eval_baseline(dataset, loss_fn):
     mean_loss = tf.keras.metrics.Mean()
     for sequences, targets in dataset:
-        predictions = (np.sum(sequences, axis=0)/len(sequences))[-1][0] # 마지막 날의 첫 번째 인자(기온)  
+        predictions = sequences[:, -1, 0]
         loss = loss_fn(predictions, targets)           
         mean_loss(loss)
         
