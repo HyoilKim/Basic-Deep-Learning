@@ -13,20 +13,21 @@ Struggle to increse performance
 | 5 | 85% |
 | 10 | 86% |
 | 30 | 87% |
+| 50 | 88% |
 | 70 | 88% |
 
 2. kernel initializer(he_uniform)
 
-| epochs | random | he |
+| epochs | origin(random) | he |
 |:--------:|:--------:|:--------:|
-| 30 | 86.6% | 86.7% |
+| 30 | 87.6% | 87.7% |
 
 3. model
 1) Add layer
 
 | epochs | origin | add layer |
 |:--------:|:--------:|:--------:|
-| 70 | 88% | 88% |
+| 30 | 87.6% | 87.9% |
 
 2) Change model(dnn->cnn)
 
@@ -34,7 +35,7 @@ Struggle to increse performance
 |:--------:|:--------:|:--------:|:--------:|
 | 10 | 86% | 90% | |
 | 20 | 87% | 90% | 91% |
-| 30 | 88% | 88%(overfitting) | 91% |
+| 30 | 87% | 88%(overfitting) | 91% |
 
 # Cat&Dog Classifier
 
