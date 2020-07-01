@@ -31,7 +31,7 @@ Struggle to increse performance
 
 - Change model(dnn->cnn)
 
-| epochs | origin | cnn | dropout & add layer | 
+| epochs | origin | cnn | dropout | 
 |:--------:|:--------:|:--------:|:--------:|
 | 10 | 86% | 90% | |
 | 20 | 87% | 90% | 91% |
