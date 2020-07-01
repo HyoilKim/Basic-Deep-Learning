@@ -23,13 +23,13 @@ Struggle to increse performance
 | 30 | 87.6% | 87.7% |
 
 3. model
-1) Add layer
+- Add layer
 
 | epochs | origin | add layer |
 |:--------:|:--------:|:--------:|
 | 30 | 87.6% | 87.9% |
 
-2) Change model(dnn->cnn)
+- Change model(dnn->cnn)
 
 | epochs | origin | cnn | dropout & add layer | 
 |:--------:|:--------:|:--------:|:--------:|
