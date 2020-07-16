@@ -5,10 +5,10 @@ Skills
 - tensorflow(2.2.0)
 - colab
 
-Struggle to increse performance
+### Struggle to increse performance(test accuracy)
 1. epochs
 
-| epochs | test accuracy |
+| epochs | accuracy |
 |:--------:|:--------:|
 | 5 | 85% |
 | 10 | 86% |
@@ -29,9 +29,9 @@ Struggle to increse performance
 |:--------:|:--------:|:--------:|
 | 30 | 87.6% | 87.9% |
 
-- Change model(dnn->cnn)
+- Change model(Dense->Conv2D)
 
-| epochs | origin | cnn | dropout | 
+| epochs | Dense | Conv2D | dropout | 
 |:--------:|:--------:|:--------:|:--------:|
 | 10 | 86% | 90% | |
 | 20 | 87% | 90% | 91% |
@@ -44,6 +44,28 @@ Skills
 - tensorflow(2.2.0)
 - colab
 
+### Struggle to increse performance(test accuracy)
+1. epochs
+
+| epochs | accuracy |
+|:--------:|:--------:|
+| 10 | 90% |
+| 20 | 90% |
+| 30 | 88% |
+
+2. dropout
+
+| epochs | origin | dropout |
+|:--------:|:--------:|:--------:|
+| 30 | 88% | 91% |
+
+3. model(add layer)
+
+| epochs | origin | add |
+|:--------:|:--------:|:--------:|
+| 20 | 90% | 91% |
+| 30 | 88% | 90% |
+
 # Whether Prediction
 
 Skills
@@ -53,3 +75,10 @@ Skills
 
 Data
 - 기상자료개방포털(2009~2018)
+
+### Struggle to increse performance(test loss)
+1. model
+
+| LSTM | LSTM(bidirectional) | GRU | GRU(bidirectional |
+|:--------:|:--------:|:--------:|:--------:|
+| 11.91 | 13.77 | 11.77 | 11.66 |
